@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio aula03</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+    <header class="row col">
+        <section class="card">
+            <div class="card-body">Exercicio aula 03 - CRUD - Aluno</div>
+        </section>
+    </header>
+
+    <main class="row">
+        <section class="col-4">
+            <div class="card">
+                <div class="card-header">Formulário</div>
+                <form >
+                    <div class="card-body">
+                        
+                            <label class="label">Nome</label>
+                            <input type="text" id="nome" class="form-control" placeholder="Informe seu nome" required>
+    
+                            <label class="label">Idade</label>
+                            <input type="number" id="idade" class="form-control" placeholder="Informe sua idade">
+    
+                            <label class="label">Camada preferida</label>
+                            <input type="text" id="camadaPreferida" class="form-control"
+                                placeholder="Informe sua camada  preferida">
+    
+                            <label class="label">Linguagens</label>
+                            <input type="text" id="linguagens" class="form-control" placeholder="Informe as linguagens separadas por ,">
+    
+                         
+    
+                    </div>
+                    <div class="card-footer">
+                        <button type="reset" class="btn btn-outline-warning">Limpar campos</button>
+                        <button type="submit" id="adicionar" class="btn btn-outline-success">Adicionar</button>
+                        <button type="submit" id="atualizar" class="btn btn-outline-primary">Atualizar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="col">
+
+            <div class="card">
+                <div class="card-header">Lista de alunos</div>
+                <div class="card-body">
+
+                    <table class=" table table-dark table-striped table-hover table-bordered   ">
+                        <thead>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Preferencia</th>
+                            <th>Linguagens</th>
+                            <th>Ações</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Teste</td>
+                                <td>99</td>
+                                <td>Binário</td>
+                                <td>Cobol,Pearl,Sinais de fumaça</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm">Excluir</button>
+                                    <button class="btn btn-primary btn-sm">Editar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/exercicio_aula03.js" type="module"></script>
+</body>
+
+</html>
